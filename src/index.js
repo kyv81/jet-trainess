@@ -1,3 +1,5 @@
+import Table from './modules/table';
+
 class HelloWorld {
   message = 'Hello World';
   print = () => this.message;
@@ -9,3 +11,9 @@ console.log(
   `%c ${hello.print()}`,
   `color: green; font-size:48px; weight: bold`,
 );
+
+const table = new Table();
+
+table.tableSort;
+table.searchFilter;
+table.pagination;
